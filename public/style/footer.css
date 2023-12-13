@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: rgb(248, 174, 36);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  font-size: 18px;
+}
+footer .social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+footer .social-links li {
+  display: inline;
+}
+
+footer .social-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #ffcc00;
+}

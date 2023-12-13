@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(120deg, #FF5F6D, #FFC371, #FdFdFd);
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.div-form{
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  max-height: 500px;
+  height: 100%;
+  width: 100%;
+  /* border: 4px double white; */
+  border-radius: 10px;
+  
+}
+
+.div-form .left{
+  width: 50%;
+  background-image: url('/image/logo.png');
+  background-size: cover;
+}
+
+.div-form .right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.div-form .right::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.div-form .right form{
+  z-index: 999;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.div-form .right form .item{
+  margin: 5px 0px;
+  /* width: 100%; */
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.div-form .right form .item .div-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.div-form .right form .item .div-input .div-label{
+  width: 150px;
+  display: flex;
+  justify-content: start;
+}
+.div-form .right form .item .div-input select,
+.div-form .right form .item .div-input input{
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  padding-left: 5px;
+  font-size: 15px;
+}
+.div-form .right form .item .div-input select:focus,
+.div-form .right form .item .div-input input:focus{
+  outline-color: yellow;
+}
+
+.div-form .right form .item .div-error{
+  font-size: 14px;
+  color: red;
+}
+
+.div-form .right form button{
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 30px;
+  font-size: 15px;
+  background-color: rgb(250, 199, 104);
+  color: white;
+}
+
+.div-form .right form .div-login{
+  margin-top: 20px;
+  font-size: 14px;
+}
+.div-form .right form .div-login span a{
+  text-decoration: none;
+  color: yellow;
+}

@@ -1,0 +1,85 @@
+.div-detailContent{
+  margin: 20px 150px;
+  border: 4px double orange;
+  border-radius: 5px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-title{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+
+.div-view{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.div-view i{
+  margin-right: 5px;
+}
+
+.div-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.div-image img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.div-favorite{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
+}
+.div-favorite button{
+  background-color: transparent;
+  border: none;
+}
+.div-favorite i{
+  font-size: 30px;
+  margin-right: 10px;
+}
+.div-favorite p{
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.div-favorite .default {
+  color: black;
+  cursor: pointer;
+}
+
+.heart-red {
+  color: red; 
+}
+
+.div-description{
+  text-align: justify;
+  font-size: 20px;
+  width: 100%;
+}

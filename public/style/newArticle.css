@@ -1,0 +1,209 @@
+
+
+.div-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+form{
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  max-height: 400px;
+  height: 100%;
+  width: 100%;
+  border: 4px double yellow;
+  border-radius: 10px;
+  background-color: rgb(251, 221, 165);
+  position: relative;
+}
+
+form .left{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px 50px 50px;
+  background-color: orange;
+  justify-content: center;
+  align-items: center;
+}
+
+form .left .div-image{
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+  background-color: rgb(255, 255, 147);
+}
+form .left .div-image img{
+  width: 100%;
+}
+form .left .div-upload{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+form .left .div-upload .image-button {
+  padding: 7px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(250, 199, 104);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+form .left .div-upload .image-button:hover {
+  opacity: 0.7;
+}
+form .left .div-upload .image-button:active {
+  opacity: 0.5;
+}
+
+form .right{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0px 50px;
+}
+
+form .right .div-form{
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+}
+
+form .right .div-form .item{
+  margin: 10px 0px;
+  width: 100%;
+  max-width: 450px;
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: column;
+}
+form .right .div-form .item .div-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+form .right .div-form .item .div-input .div-label{
+  width: 100px;
+  display: flex;
+  justify-content: start;
+}
+form .right .div-form .item .div-input select,
+form .right .div-form .item .div-input input{
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  padding-left: 5px;
+  font-size: 15px;
+}
+form .right .div-form .item .div-input select:focus,
+form .right .div-form .item .div-input input:focus{
+  outline-color: yellow;
+}
+
+form .right .div-form .item .div-input-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+form .right .div-form .item .div-input-description textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  height: 150px; 
+  padding: 5px;
+  font-size: 15px;
+  overflow-y: auto; 
+  resize: none;
+}
+
+form .right .div-form .item .div-input-description textarea:focus {
+  outline-color: yellow;
+}
+
+form .right .div-form .item .div-input-description textarea::-webkit-scrollbar {
+  width: 12px; 
+}
+
+form .right .div-form .item .div-input-description textarea::-webkit-scrollbar-track {
+  background: orange;
+}
+
+form .right .div-form .item .div-input-description textarea::-webkit-scrollbar-thumb {
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+form .right .div-form .item .div-error{
+  font-size: 14px;
+  color: red;
+}
+
+form .right .div-form button{
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 30px;
+  font-size: 15px;
+  background-color: rgb(250, 199, 104);
+  color: white;
+}
+form .right .div-form button:hover{
+  opacity: 0.7;
+}
+
+form .right .div-form .div-login{
+  margin-top: 20px;
+  font-size: 14px;
+}
+form .right .div-form .div-login span a{
+  text-decoration: none;
+  color: yellow;
+}
+
+.failedText{
+  color: red;
+  font-size: 20px;
+}
+.successText{
+  color: rgb(48, 144, 48);
+  font-size: 20px;
+}
+
+.div-logout{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.div-logout .logoutForm button{
+  text-decoration: none;
+  background-color: rgb(250, 199, 104);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+}
+.div-logout .logoutForm button:hover{
+  opacity: 0.7;
+}
