@@ -22,7 +22,7 @@
             </div>
             <div class="item description">{{ \Illuminate\Support\Str::limit($article->description, 300) }}</div>
             <div class="item divButton">
-              <a href="">Read Detail</a>
+              <a href="{{route('articleDetail', $article)}}">Read Detail</a>
             </div>
           </div>
         </div>
