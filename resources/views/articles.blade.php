@@ -39,7 +39,7 @@
   @foreach ($articles as $article)
     <div class="card">
       <div class="div-left">
-        <img src={{ $article->articleImage? "/image/ArticleImages/". $article->articleImage : "/image/noImageDefault.jpg"}} alt="Article-Image">
+        <img src="{{ $article->articleImage? "/image/ArticleImages/". $article->articleImage : "/image/noImageDefault.jpg"}}" alt="Article-Image">
       </div>
       <div class="div-right">
         <div class="div-title">

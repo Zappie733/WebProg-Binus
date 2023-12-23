@@ -39,7 +39,7 @@
   @foreach($pets as $pet)
     <div class="petCard">
       <div class="div-image">
-        <img src={{$pet->petImage? "/image/PetImages/". $pet->petImage : "/image/noImageDefault.jpg"}}  alt="pet image">
+        <img src="{{$pet->petImage? "/image/PetImages/". $pet->petImage : "/image/noImageDefault.jpg"}}"  alt="pet image">
       </div>
       <div class="div-title">
         <p>{{$pet->name}}</p>
