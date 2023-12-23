@@ -19,7 +19,7 @@
     @forelse ($admins as $admin)
     <tr>
       <td>{{$admin->id}}</td>
-      <td><img src={{ $admin->profilePhoto ? '/image/ProfilePhotos/' . $admin->profilePhoto : '/image/ProfilePhotos/default.jpg' }} alt="profile-photo"></td>
+      <td><img src="{{ $admin->profilePhoto ? '/image/ProfilePhotos/' . $admin->profilePhoto : '/image/ProfilePhotos/default.jpg' }}" alt="profile-photo"></td>
       <td>{{$admin->username}}</td>
       <td>{{$admin->email}}</td>
       <td>{{$admin->dob}}</td>
@@ -57,7 +57,7 @@
     @forelse ($users as $user)
     <tr>
       <td>{{$user->id}}</td>
-      <td><img src={{ $user->profilePhoto ? '/image/ProfilePhotos/' . $user->profilePhoto : '/image/ProfilePhotos/default.jpg' }} alt="profile-photo"></td>
+      <td><img src="{{ $user->profilePhoto ? '/image/ProfilePhotos/' . $user->profilePhoto : '/image/ProfilePhotos/default.jpg' }}" alt="profile-photo"></td>
       <td>{{$user->username}}</td>
       <td>{{$user->email}}</td>
       <td>{{$user->dob}}</td>
